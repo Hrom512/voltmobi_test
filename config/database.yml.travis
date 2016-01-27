@@ -1,0 +1,7 @@
+test:
+  encoding: unicode
+  host: localhost
+  adapter: postgresql
+  database: voltmobi_test
+  username: postgres
+  pool: 5
