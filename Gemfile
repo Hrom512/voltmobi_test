@@ -51,3 +51,5 @@ group :development do
   gem 'guard-rspec', require: false
   gem 'guard-rubocop', require: false
 end
+
+gem 'state_machine'
