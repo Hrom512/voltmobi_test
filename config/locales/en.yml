@@ -1,2 +1,7 @@
 en:
-  app_name: "VoltmobiTest"
+  app_name: VoltmobiTest
+
+  tasks: Tasks
+  task_id: Task id
+  task_name: Name
+  task_user: User

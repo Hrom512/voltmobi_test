@@ -1,2 +1,7 @@
 ru:
-  app_name: "VoltmobiTest"
+  app_name: VoltmobiTest
+
+  tasks: Задачи
+  task_id: Номер задачи
+  task_name: Нозвание
+  task_user: Пользователь
