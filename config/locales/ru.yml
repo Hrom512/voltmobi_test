@@ -5,3 +5,4 @@ ru:
   task_id: Номер задачи
   task_name: Нозвание
   task_user: Пользователь
+  tasks_not_found: Задачи не найдены

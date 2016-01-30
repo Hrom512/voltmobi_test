@@ -5,3 +5,4 @@ en:
   task_id: Task id
   task_name: Name
   task_user: User
+  tasks_not_found: Tasks not found
