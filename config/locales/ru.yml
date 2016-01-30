@@ -1,6 +1,9 @@
 ru:
   app_name: VoltmobiTest
 
+  login: Войти
+  logout: Выход
+
   tasks: Задачи
   task_id: Номер задачи
   task_name: Нозвание

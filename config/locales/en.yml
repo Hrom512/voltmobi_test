@@ -1,6 +1,9 @@
 en:
   app_name: VoltmobiTest
 
+  login: Login
+  logout: Logout
+
   tasks: Tasks
   task_id: Task id
   task_name: Name

@@ -55,3 +55,6 @@ group :development do
 end
 
 gem 'state_machine'
+
+gem 'devise'
+gem 'devise-i18n'

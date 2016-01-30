@@ -8,5 +8,12 @@ html
     == yield :head
   body
     == render partial: 'application/header'
+
+    .container
+      - if notice
+        .alert.alert-info = notice
+      - if alert
+        .alert.alert-warning = alert
+
     #content.container
       == yield
