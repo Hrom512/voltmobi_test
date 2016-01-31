@@ -63,3 +63,7 @@ gem 'state_machine'
 
 gem 'devise'
 gem 'devise-i18n'
+
+gem 'paperclip', '~> 4.3'
+
+gem 'cocoon'

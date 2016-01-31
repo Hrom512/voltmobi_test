@@ -56,6 +56,6 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:name, :description)
+    params.require(:task).permit(:name, :description, attachments_attributes: [:id, :file, :_destroy])
   end
 end

@@ -1,0 +1,8 @@
+.nested-fields.form-group
+  .form-inline
+    - if f.object.new_record?
+      == f.file_field :file, class: 'form-control'
+    - else
+      .btn.btn-default = f.object.file_file_name
+    ==< link_to_remove_association f, class: 'btn btn-danger', title: t(:destroy) do
+      .glyphicon.glyphicon-remove

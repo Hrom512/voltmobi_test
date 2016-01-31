@@ -15,3 +15,6 @@ en:
   tasks_not_found: Tasks not found
   new_task: New task
   editing_task: Editing task
+
+  attachments: Attachments
+  add_attachment: Add attachment

@@ -59,6 +59,11 @@ GEM
       xpath (~> 2.0)
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
+    cocoon (1.2.7)
     coderay (1.1.0)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -127,6 +132,7 @@ GEM
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
     mime-types (2.99)
+    mimemagic (0.3.0)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
@@ -137,6 +143,12 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     orm_adapter (0.5.0)
+    paperclip (4.3.3)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      cocaine (~> 0.5.5)
+      mime-types
+      mimemagic (= 0.3.0)
     parser (2.3.0.2)
       ast (~> 2.2)
     pg (0.18.4)
@@ -279,6 +291,7 @@ DEPENDENCIES
   bootstrap-sass
   byebug
   capybara
+  cocoon
   coffee-rails (~> 4.1.0)
   database_cleaner
   devise
@@ -290,6 +303,7 @@ DEPENDENCIES
   headless
   jbuilder (~> 2.0)
   jquery-rails
+  paperclip (~> 4.3)
   pg
   rails (= 4.2.5.1)
   rails-i18n

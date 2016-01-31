@@ -16,6 +16,9 @@ ru:
   new_task: Создать задачу
   editing_task: Редактирование задачи
 
+  attachments: Файлы
+  add_attachment: Добавить файл
+
   activerecord:
     models:
       task:
