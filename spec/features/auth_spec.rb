@@ -1,5 +1,4 @@
 require 'rails_helper'
-include Warden::Test::Helpers
 
 RSpec.feature 'Auth', :type => :feature do
   let(:user) { create(:user, password: password) }

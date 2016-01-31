@@ -1,0 +1,14 @@
+= form_for task do |form|
+  - if task.errors.any?
+    .alert.alert-danger
+      ul
+        - task.errors.full_messages.each do |message|
+          li = message
+  .form-group
+    == form.label :name
+    == form.text_field :name, class: 'form-control'
+  .form-group
+    == form.label :description
+    == form.text_field :description, class: 'form-control'
+  .form-group
+    == form.submit t(:save), class: 'btn btn-primary'

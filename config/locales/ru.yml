@@ -3,9 +3,31 @@ ru:
 
   login: Войти
   logout: Выход
+  profile: Личный кабинет
+
+  save: Сохранить
+  edit: Редактировать
+  destroy: Удалить
+  are_you_sure: Вы уверены?
+  back: Назад
 
   tasks: Задачи
-  task_id: Номер задачи
-  task_name: Название
-  task_user: Пользователь
   tasks_not_found: Задачи не найдены
+  new_task: Создать задачу
+  editing_task: Редактирование задачи
+
+  activerecord:
+    models:
+      task:
+        one: Задача
+        other: Задачи
+    attributes:
+      task:
+        name: Название
+        description: Описание
+        state: Статус
+        user: Пользователь
+      task/state:
+        new: Новый
+        started: В работе
+        finished: Выполнено

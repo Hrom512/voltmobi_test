@@ -5,8 +5,8 @@
         a class="navbar-brand" href=root_path
           = t(:app_name)
       ul.nav.navbar-nav.navbar-right
-        li
-          - if user_signed_in?
-            == link_to t(:logout), destroy_user_session_path, :class => 'logout', :method => :delete
-          - else
-            == link_to t(:login), new_user_session_path, class: 'login'
+        - if user_signed_in?
+          li == link_to t(:profile), profile_path, class: 'profile'
+          li == link_to t(:logout), destroy_user_session_path, :class => 'logout', :method => :delete
+        - else
+          li == link_to t(:login), new_user_session_path, class: 'login'

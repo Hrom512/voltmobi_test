@@ -10,5 +10,5 @@ class Task < ActiveRecord::Base
     initialize_state_machines(:dynamic => :force)
   end
 
-  validates :name, presence: true
+  validates :name, :user, presence: true
 end

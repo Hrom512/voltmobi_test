@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.5.1'
+gem 'rails-i18n'
 gem 'pg'
 
 gem 'slim-rails'
@@ -36,7 +37,11 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
+
   gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
+  gem 'headless'
 end
 
 group :development do

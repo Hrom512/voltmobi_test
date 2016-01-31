@@ -3,9 +3,15 @@ en:
 
   login: Login
   logout: Logout
+  profile: Profile
+
+  save: Save
+  edit: Edit
+  destroy: Destroy
+  are_you_sure: Are you sure?
+  back: Back
 
   tasks: Tasks
-  task_id: Task id
-  task_name: Name
-  task_user: User
   tasks_not_found: Tasks not found
+  new_task: New task
+  editing_task: Editing task

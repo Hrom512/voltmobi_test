@@ -9,6 +9,7 @@ RSpec.describe Task, :type => :model do
 
   describe 'validations' do
     it { is_expected.to validate_presence_of(:name) }
+    it { is_expected.to validate_presence_of(:user) }
     it { is_expected.to validate_inclusion_of(:state).in_array(%w(new started finished)) }
   end
 
