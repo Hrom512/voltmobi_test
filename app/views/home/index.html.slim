@@ -4,8 +4,8 @@ h1 = t(:tasks)
   table#tasks.table.table-hover
     thead
       tr
-        th.name = t(:task_name)
-        th.user = t(:task_user)
+        th.name = Task.human_attribute_name(:name)
+        th.user = Task.human_attribute_name(:user)
     tbody
     - @tasks.each do |task|
       tr.task
