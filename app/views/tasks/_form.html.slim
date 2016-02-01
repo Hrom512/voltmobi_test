@@ -1,0 +1,25 @@
+= form_for task, multipart: true do |form|
+  - if task.errors.any?
+    .alert.alert-danger
+      ul
+        - task.errors.full_messages.each do |message|
+          li = message
+
+  .form-group
+    == form.label :name
+    == form.text_field :name, class: 'form-control'
+
+  .form-group
+    == form.label :description
+    == form.text_field :description, class: 'form-control'
+
+  .panel.panel-default
+    .panel-heading = t(:attachments)
+    .panel-body
+      = form.fields_for :attachments do |attachment|
+        = render 'attachment_fields', f: attachment
+      .links
+        = link_to_add_association t(:add_attachment), form, :attachments, class: 'btn btn-success'
+
+  .form-group
+    == form.submit t(:save), class: 'btn btn-primary'

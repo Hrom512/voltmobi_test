@@ -1,0 +1,16 @@
+h1 = t(:tasks)
+
+- if @tasks.present?
+  table#tasks.table.table-hover
+    thead
+      tr
+        th.name = Task.human_attribute_name(:name)
+        th.user = Task.human_attribute_name(:user)
+    tbody
+    - @tasks.each do |task|
+      tr.task
+        td.name = task.name
+        td.user = task.user.email
+- else
+  .alert.alert-info
+    = t(:tasks_not_found)

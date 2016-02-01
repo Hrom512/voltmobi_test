@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title = t(:app_name)
+    == stylesheet_link_tag 'application', media: 'all'
+    == javascript_include_tag 'application'
+    == csrf_meta_tags
+    == yield :head
+  body
+    == render partial: 'application/header'
+
+    .container
+      - if notice
+        .alert.alert-info = notice
+      - if alert
+        .alert.alert-warning = alert
+
+    #content.container
+      == yield
