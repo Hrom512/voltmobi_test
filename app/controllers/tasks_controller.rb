@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   before_action :authenticate_user!
-  before_action :find_task, only: [:show, :edit, :update, :destroy]
-  before_action :check_access, only: [:edit, :update, :destroy]
+  before_action :find_task, only: [:show, :edit, :update, :destroy, :start, :finish]
+  before_action :check_access, only: [:edit, :update, :destroy, :start, :finish]
 
   def index
     @tasks = default_scope
@@ -39,6 +39,24 @@ class TasksController < ApplicationController
   def destroy
     @task.destroy
     redirect_to profile_path
+  end
+
+  def start
+    if @task.can_start?
+      @task.start!
+      redirect_to task_path(@task)
+    else
+      render_403
+    end
+  end
+
+  def finish
+    if @task.can_finish?
+      @task.finish!
+      redirect_to task_path(@task)
+    else
+      render_403
+    end
   end
 
   private
