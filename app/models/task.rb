@@ -7,6 +7,14 @@ class Task < ActiveRecord::Base
   state_machine :state, :initial => :new do
     state :started
     state :finished
+
+    event :start do
+      transition :new => :started
+    end
+
+    event :finish do
+      transition :started => :finished
+    end
   end
 
   before_validation :on => :create do
